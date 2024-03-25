@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.register-container {
+    max-width: 320px;
+    margin: 100px auto;
+    background-color: rgba(34, 34, 34, 0.8); /* Consistent with the login container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Consistent with the login container */
+    color: white; /* Consistent with the login container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid #ff0000; /* Match the login styling */
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%; /* Make sure the fieldset does not overflow the container */
+}
+
+legend {
+    color: #FFF; /* Match the login styling */
+    font-size: 1.5rem; /* Increased for consistency */
+    padding: 10px;
+    width: auto; /* Auto width to fit content */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 20px; /* Consistent spacing */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: white; /* Ensuring visibility on the darker background */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #333; /* Darker for consistency */
+    border: 1px solid red; /* Consistent with the login container */
+    border-radius: 4px;
+    color: white; /* Consistent with the login container */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: red; /* Consistent with the login button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #ff3333; /* Consistent with the login hover state */
+}
+
+.error {
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center; /* Ensure the message is centered */
+}
+
+.gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between the radio buttons */
+}
+
+.gender-label {
+    display: flex;
+    align-items: center; /* Align the text vertically with the radio button */
+}

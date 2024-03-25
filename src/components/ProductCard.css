@@ -1,0 +1,86 @@
+/* Card General Styling */
+.card {
+    border: none;
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth transform on hover */
+    overflow: hidden; /* Ensures nothing spills outside the border */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    max-height: 200px; /* Maximum height of the image */
+    object-fit: contain; /* Ensure the whole image fits within the box */
+    border-top-left-radius: calc(0.25rem - 1px); /* Rounded corners */
+    border-top-right-radius: calc(0.25rem - 1px); /* Rounded corners */
+}
+
+
+/* Card Body Styling */
+.card-body {
+    padding: 15px; /* Comfortable padding around the card content */
+    background-color: #ffffff; /* Match background to your theme */
+}
+
+.card-title {
+    margin-bottom: 5px;
+    font-size: 1rem; /* Adapt this based on your design */
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.875rem; /* Slightly smaller text for the description */
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    color: #ffc107; /* Gold color for active stars */
+    margin-right: 4px; /* Space between stars */
+}
+
+.star.off {
+    color: #e4e5e9; /* Light grey color for inactive stars */
+}
+
+/* Price and Add to Cart Button */
+.card-body > .btn {
+    background-color: #000; /* Black background for the button */
+    color: white;
+    width: 100%; /* Ensure button stretches to full width */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 0; /* Comfortable padding */
+}
+
+.card-body > .btn:hover {
+    background-color: #333333; /* Darker on hover */
+}
+
+/* Additional details below product (e.g., discounts, features) */
+.discount-percentage {
+    /* Style for discount percentage, if you have this */
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 0.875rem;
+}
+
+.features {
+    /* Style for any additional features listed */
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin-top: 10px;
+    color: #555; /* Dark grey color for text */
+    font-size: 0.875rem;
+}
